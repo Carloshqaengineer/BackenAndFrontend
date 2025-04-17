@@ -1,0 +1,81 @@
+package com.example.usuariospa.controller;
+
+import com.example.usuariospa.model.entity.Usuario;
+import com.example.usuariospa.model.entity.EstadoUsuario;
+import com.example.usuariospa.model.entity.Rol;
+import com.example.usuariospa.service.UsuarioService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@Slf4j
+@RestController
+@RequestMapping("/api/usuarios")
+@RequiredArgsConstructor
+public class UsuarioController {
+    private final UsuarioService usuarioService;
+
+    @PostMapping
+    public ResponseEntity<Usuario> crear(@RequestBody Usuario usuario) {
+        log.info("Creando nuevo usuario: {}", usuario.getCorreo());
+        Usuario nuevoUsuario = usuarioService.crearUsuario(usuario);
+        log.info("Usuario creado exitosamente con ID: {}", nuevoUsuario.getId());
+        return ResponseEntity.ok(nuevoUsuario);
+    }
+
+    @PutMapping("/{id}/grupo/{idGrupo}")
+    public ResponseEntity<Usuario> asignarGrupo(@PathVariable Long id, @PathVariable Long idGrupo) {
+        log.info("Asignando grupo {} al usuario {}", idGrupo, id);
+        Usuario usuario = usuarioService.asignarGrupo(id, idGrupo);
+        log.info("Grupo asignado exitosamente al usuario {}", id);
+        return ResponseEntity.ok(usuario);
+    }
+
+    @PutMapping("/{id}/rol")
+    public ResponseEntity<Usuario> cambiarRol(@PathVariable Long id, @RequestParam Rol rol) {
+        log.info("Cambiando rol del usuario {} a {}", id, rol);
+        Usuario usuario = usuarioService.cambiarRol(id, rol);
+        log.info("Rol cambiado exitosamente para el usuario {}", id);
+        return ResponseEntity.ok(usuario);
+    }
+
+    @PutMapping("/{id}/estado")
+    public ResponseEntity<Usuario> cambiarEstado(@PathVariable Long id, @RequestParam EstadoUsuario estado) {
+        log.info("Cambiando estado del usuario {} a {}", id, estado);
+        Usuario usuario = usuarioService.cambiarEstado(id, estado);
+        log.info("Estado cambiado exitosamente para el usuario {}", id);
+        return ResponseEntity.ok(usuario);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Usuario> editarDatos(@PathVariable Long id, @RequestBody Usuario usuario) {
+        log.info("Editando datos del usuario {}", id);
+        Usuario usuarioActualizado = usuarioService.editarDatos(id, usuario);
+        log.info("Datos actualizados exitosamente para el usuario {}", id);
+        return ResponseEntity.ok(usuarioActualizado);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> eliminar(@PathVariable Long id) {
+        log.info("Eliminando usuario {}", id);
+        usuarioService.eliminarUsuario(id);
+        log.info("Usuario {} eliminado exitosamente", id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/buscar")
+    public ResponseEntity<List<Usuario>> filtrar(
+            @RequestParam(required = false) String nombre,
+            @RequestParam(required = false) String apellido,
+            @RequestParam(required = false) String correo,
+            @RequestParam(required = false) Integer edad) {
+        log.info("Filtrando usuarios por nombre: {}, apellido: {}, correo: {}, edad: {}", 
+                nombre, apellido, correo, edad);
+        List<Usuario> usuarios = usuarioService.filtrar(nombre, apellido, correo, edad);
+        log.info("Se encontraron {} usuarios que coinciden con los criterios de búsqueda", usuarios.size());
+        return ResponseEntity.ok(usuarios);
+    }
+}

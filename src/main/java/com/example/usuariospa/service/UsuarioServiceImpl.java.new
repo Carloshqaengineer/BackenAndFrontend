@@ -1,0 +1,128 @@
+package com.example.usuariospa.service;
+
+import com.example.usuariospa.model.entity.Usuario;
+import com.example.usuariospa.model.entity.EstadoUsuario;
+import com.example.usuariospa.model.entity.Rol;
+import com.example.usuariospa.repository.UsuarioRepository;
+import com.example.usuariospa.repository.GrupoTrabajoRepository;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+public class UsuarioServiceImpl implements UsuarioService {
+    private final UsuarioRepository usuarioRepository;
+    private final GrupoTrabajoRepository grupoTrabajoRepository;
+
+    @Override
+    public Usuario crearUsuario(Usuario usuario) {
+        log.debug("Iniciando creación de usuario con correo: {}", usuario.getCorreo());
+        Usuario nuevoUsuario = usuarioRepository.save(usuario);
+        log.debug("Usuario creado exitosamente con ID: {}", nuevoUsuario.getId());
+        return nuevoUsuario;
+    }
+
+    @Override
+    public Usuario asignarGrupo(Long idUsuario, Long idGrupo) {
+        log.debug("Asignando grupo {} al usuario {}", idGrupo, idUsuario);
+        Usuario u = usuarioRepository.findById(idUsuario)
+            .orElseThrow(() -> {
+                log.error("Usuario no encontrado con ID: {}", idUsuario);
+                return new RuntimeException("Usuario no encontrado");
+            });
+        u.setGrupoTrabajo(grupoTrabajoRepository.findById(idGrupo)
+            .orElseThrow(() -> {
+                log.error("Grupo de trabajo no encontrado con ID: {}", idGrupo);
+                return new RuntimeException("Grupo de trabajo no encontrado");
+            }));
+        Usuario usuarioActualizado = usuarioRepository.save(u);
+        log.debug("Grupo asignado exitosamente al usuario {}", idUsuario);
+        return usuarioActualizado;
+    }
+
+    @Override
+    public Usuario cambiarRol(Long idUsuario, Rol nuevoRol) {
+        log.debug("Cambiando rol a {} para usuario {}", nuevoRol, idUsuario);
+        Usuario u = usuarioRepository.findById(idUsuario)
+            .orElseThrow(() -> {
+                log.error("Usuario no encontrado con ID: {}", idUsuario);
+                return new RuntimeException("Usuario no encontrado");
+            });
+        u.setRol(nuevoRol);
+        Usuario usuarioActualizado = usuarioRepository.save(u);
+        log.debug("Rol cambiado exitosamente para usuario {}", idUsuario);
+        return usuarioActualizado;
+    }
+
+    @Override
+    public Usuario editarDatos(Long idUsuario, Usuario nuevosDatos) {
+        log.debug("Editando datos del usuario {}", idUsuario);
+        Usuario u = usuarioRepository.findById(idUsuario)
+            .orElseThrow(() -> {
+                log.error("Usuario no encontrado con ID: {}", idUsuario);
+                return new RuntimeException("Usuario no encontrado");
+            });
+        u.setNombre(nuevosDatos.getNombre());
+        u.setApellido(nuevosDatos.getApellido());
+        u.setCorreo(nuevosDatos.getCorreo());
+        u.setCiudad(nuevosDatos.getCiudad());
+        u.setProvincia(nuevosDatos.getProvincia());
+        u.setSexo(nuevosDatos.getSexo());
+        u.setProfesion(nuevosDatos.getProfesion());
+        u.setFechaNacimiento(nuevosDatos.getFechaNacimiento());
+        u.setEdad(nuevosDatos.getEdad());
+        Usuario usuarioActualizado = usuarioRepository.save(u);
+        log.debug("Datos actualizados exitosamente para usuario {}", idUsuario);
+        return usuarioActualizado;
+    }
+
+    @Override
+    public void eliminarUsuario(Long id) {
+        log.debug("Eliminando usuario {}", id);
+        try {
+            usuarioRepository.deleteById(id);
+            log.debug("Usuario {} eliminado exitosamente", id);
+        } catch (Exception e) {
+            log.error("Error al eliminar usuario {}: {}", id, e.getMessage());
+            throw e;
+        }
+    }
+
+    @Override
+    public Usuario cambiarEstado(Long idUsuario, EstadoUsuario nuevoEstado) {
+        log.debug("Cambiando estado a {} para usuario {}", nuevoEstado, idUsuario);
+        Usuario u = usuarioRepository.findById(idUsuario)
+            .orElseThrow(() -> {
+                log.error("Usuario no encontrado con ID: {}", idUsuario);
+                return new RuntimeException("Usuario no encontrado");
+            });
+        u.setEstado(nuevoEstado);
+        Usuario usuarioActualizado = usuarioRepository.save(u);
+        log.debug("Estado cambiado exitosamente para usuario {}", idUsuario);
+        return usuarioActualizado;
+    }
+
+    @Override
+    public List<Usuario> filtrar(String nombre, String apellido, String correo, Integer edad) {
+        log.debug("Filtrando usuarios por nombre: {}, apellido: {}, correo: {}, edad: {}", 
+                nombre, apellido, correo, edad);
+        List<Usuario> usuarios;
+        if (nombre != null) {
+            usuarios = usuarioRepository.findByNombreContainingIgnoreCase(nombre);
+        } else if (apellido != null) {
+            usuarios = usuarioRepository.findByApellidoContainingIgnoreCase(apellido);
+        } else if (correo != null) {
+            usuarios = usuarioRepository.findByCorreoContainingIgnoreCase(correo);
+        } else if (edad != null) {
+            usuarios = usuarioRepository.findByEdad(edad);
+        } else {
+            usuarios = usuarioRepository.findAll();
+        }
+        log.debug("Se encontraron {} usuarios que coinciden con los criterios de búsqueda", usuarios.size());
+        return usuarios;
+    }
+}
