@@ -1,34 +1,37 @@
-2025-04-17 00:02:41,669 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2025-04-17 00:02:41,760 INFO o.s.b.StartupInfoLogger [main] Starting UsuariosSpaApplication using Java 17.0.13 with PID 12596 (C:\Users\carls\user.spa.api\target\classes started by Familia Hernando in C:\Users\carls\user.spa.api)
-2025-04-17 00:02:41,761 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.5, Spring v6.0.13
-2025-04-17 00:02:41,768 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-04-17 00:02:43,143 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17 00:02:43,295 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 132 ms. Found 2 JPA repository interfaces.
-2025-04-17 00:02:44,320 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2025-04-17 00:02:44,343 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2025-04-17 00:02:44,351 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2025-04-17 00:02:44,352 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
-2025-04-17 00:02:44,597 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2025-04-17 00:02:44,600 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2717 ms
-2025-04-17 00:02:44,844 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17 00:02:44,991 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
-2025-04-17 00:02:44,997 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2025-04-17 00:02:45,569 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17 00:02:45,630 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2025-04-17 00:02:45,929 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6927f0
-2025-04-17 00:02:45,934 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-04-17 00:02:47,666 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17 00:02:47,826 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17 00:02:48,669 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17 00:02:49,213 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2025-04-17 00:02:49,260 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2025-04-17 00:02:49,275 INFO o.s.b.StartupInfoLogger [main] Started UsuariosSpaApplication in 8.565 seconds (process running for 9.257)
-2025-04-17 00:03:45,257 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17 00:03:45,258 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2025-04-17 00:03:45,264 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 5 ms
-2025-04-17 00:03:45,499 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-1] Editando datos del usuario 6
-2025-04-17 00:03:45,615 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Editando datos del usuario 6
-2025-04-17 00:03:45,757 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
+2025-04-22 10:33:35,925 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19h21s211ms391µs700ns).
+2025-04-22 15:58:24,927 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-04-22 15:58:25,092 INFO o.s.b.StartupInfoLogger [main] Starting UsuariosSpaApplication using Java 17.0.13 with PID 7764 (C:\Users\carls\user.spa.api\target\classes started by Familia Hernando in C:\Users\carls\user.spa.api)
+2025-04-22 15:58:25,097 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-04-22 15:58:25,102 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-22 15:58:28,166 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-22 15:58:28,304 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 128 ms. Found 2 JPA repository interfaces.
+2025-04-22 15:58:29,434 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2025-04-22 15:58:29,450 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-22 15:58:29,459 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-04-22 15:58:29,459 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-04-22 15:58:29,688 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-04-22 15:58:29,707 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4413 ms
+2025-04-22 15:58:29,976 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-22 15:58:30,089 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-04-22 15:58:30,108 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2025-04-22 15:58:30,619 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-22 15:58:30,668 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-22 15:58:31,053 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a9b92c6
+2025-04-22 15:58:31,069 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-22 15:58:31,202 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-22 15:58:31,238 DEBUG o.h.t.d.s.s.DdlTypeRegistry [main] addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@40fe8fd5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@37ffe4f3)
+2025-04-22 15:58:33,475 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-22 15:58:33,753 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-22 15:58:34,878 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-22 15:58:35,179 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2025-04-22 15:58:35,700 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-22 15:58:35,738 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2025-04-22 15:58:35,771 INFO o.s.b.StartupInfoLogger [main] Started UsuariosSpaApplication in 13.838 seconds (process running for 14.771)
+2025-04-22 15:58:35,919 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-22 15:58:35,919 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-22 15:58:35,926 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 7 ms
+2025-04-22 15:58:36,052 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Buscando usuario con ID: 1
+2025-04-22 15:58:36,157 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -50,69 +53,8 @@
         usuarios u1_0 
     where
         u1_0.id=?
-2025-04-17 00:03:46,059 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.correo=?
-2025-04-17 00:03:46,081 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Datos actualizados exitosamente para usuario 6
-2025-04-17 00:03:46,142 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 00:03:46,179 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-1] Datos actualizados exitosamente para el usuario 6
-2025-04-17 00:03:46,256 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    select
-        g1_0.id,
-        g1_0.nombre 
-    from
-        grupo_trabajo g1_0 
-    where
-        g1_0.id=?
-2025-04-17 00:07:12,800 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-5] Eliminando usuario 6
-2025-04-17 00:07:12,805 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Eliminando usuario 6
-2025-04-17 00:07:13,229 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
-    select
-        count(*) 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 00:07:13,238 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
+2025-04-22 15:58:38,217 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-4] Buscando usuario con ID: 1
+2025-04-22 15:58:38,221 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-4] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -134,19 +76,8 @@
         usuarios u1_0 
     where
         u1_0.id=?
-2025-04-17 00:07:13,266 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Usuario 6 eliminado exitosamente
-2025-04-17 00:07:13,271 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
-    delete 
-    from
-        usuarios 
-    where
-        id=? 
-        and version=?
-2025-04-17 00:07:13,289 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-5] Usuario 6 eliminado exitosamente
-2025-04-17 09:51:40,698 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h43m24s577ms963µs100ns).
-2025-04-17 09:56:36,371 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-8] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 09:56:36,467 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-8] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 09:56:36,540 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-8] 
+2025-04-22 15:58:39,120 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 15:58:39,255 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -166,91 +97,9 @@
         u1_0.version 
     from
         usuarios u1_0
-2025-04-17 09:56:36,594 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-8] Se encontraron 3 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 09:56:36,599 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-8] Se encontraron 3 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 10:16:18,132 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-2] Eliminando usuario 2
-2025-04-17 10:16:18,215 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Eliminando usuario 2
-2025-04-17 10:16:18,315 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        count(*) 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:16:18,369 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:16:18,416 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Usuario 2 eliminado exitosamente
-2025-04-17 10:16:18,467 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    delete 
-    from
-        usuarios 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:16:18,516 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-2] Usuario 2 eliminado exitosamente
-2025-04-17 10:16:40,241 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-1] Eliminando usuario 3
-2025-04-17 10:16:40,256 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Eliminando usuario 3
-2025-04-17 10:16:40,263 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    select
-        count(*) 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:16:40,276 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:16:40,291 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Usuario 3 eliminado exitosamente
-2025-04-17 10:16:40,294 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    delete 
-    from
-        usuarios 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:16:40,308 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-1] Usuario 3 eliminado exitosamente
-2025-04-17 10:17:24,083 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 10:17:24,098 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 10:17:24,113 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
+2025-04-22 15:58:39,266 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 15:58:44,231 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 15:58:44,240 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -270,419 +119,40 @@
         u1_0.version 
     from
         usuarios u1_0
-2025-04-17 10:17:24,118 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Se encontraron 1 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 10:17:24,124 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Se encontraron 1 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 10:25:35,091 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-6] Asignando grupo 3 al usuario 5
-2025-04-17 10:25:35,097 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-6] Asignando grupo 3 al usuario 5
-2025-04-17 10:25:35,100 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-6] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:25:35,149 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-6] 
-    select
-        g1_0.id,
-        g1_0.nombre 
-    from
-        grupo_trabajo g1_0 
-    where
-        g1_0.id=?
-2025-04-17 10:25:35,170 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-6] Grupo asignado exitosamente al usuario 5
-2025-04-17 10:25:35,259 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-6] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:25:35,296 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-6] Grupo asignado exitosamente al usuario 5
-2025-04-17 10:47:08,546 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2025-04-17 10:47:08,630 INFO o.s.b.StartupInfoLogger [main] Starting UsuariosSpaApplication using Java 17.0.13 with PID 13636 (C:\Users\carls\user.spa.api\target\classes started by Familia Hernando in C:\Users\carls\user.spa.api)
-2025-04-17 10:47:08,631 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.5, Spring v6.0.13
-2025-04-17 10:47:08,633 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-04-17 10:47:10,162 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17 10:47:10,263 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
-2025-04-17 10:47:11,362 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2025-04-17 10:47:11,383 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2025-04-17 10:47:11,390 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2025-04-17 10:47:11,392 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
-2025-04-17 10:47:11,648 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2025-04-17 10:47:11,654 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2894 ms
-2025-04-17 10:47:11,982 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17 10:47:12,108 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
-2025-04-17 10:47:12,116 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2025-04-17 10:47:13,007 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17 10:47:13,105 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2025-04-17 10:47:13,516 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9205c0a
-2025-04-17 10:47:13,521 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-04-17 10:47:15,440 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17 10:47:15,797 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17 10:47:16,699 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17 10:47:17,262 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2025-04-17 10:47:17,320 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2025-04-17 10:47:17,335 INFO o.s.b.StartupInfoLogger [main] Started UsuariosSpaApplication in 9.81 seconds (process running for 11.013)
-2025-04-17 10:47:53,052 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17 10:47:53,054 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
-2025-04-17 10:47:53,056 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed initialization in 2 ms
-2025-04-17 10:50:31,675 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-4] Cambiando estado del usuario 5 a BLOQUEADO
-2025-04-17 10:50:31,737 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-4] Cambiando estado a BLOQUEADO para usuario 5
-2025-04-17 10:50:31,864 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-4] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:50:31,958 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-4] Estado cambiado exitosamente para usuario 5
-2025-04-17 10:50:32,095 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-4] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:50:32,158 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-4] Estado cambiado exitosamente para el usuario 5
-2025-04-17 10:50:32,219 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-4] 
-    select
-        g1_0.id,
-        g1_0.nombre 
-    from
-        grupo_trabajo g1_0 
-    where
-        g1_0.id=?
-2025-04-17 10:55:41,974 ERROR c.e.u.e.GlobalExceptionHandler [http-nio-8080-exec-7] Unexpected error: Request method 'PUT' is not supported
-2025-04-17 10:56:24,120 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-10] Cambiando rol del usuario 5 a USUARIO
-2025-04-17 10:56:24,126 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Cambiando rol a USUARIO para usuario 5
-2025-04-17 10:56:24,129 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:56:24,145 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Rol cambiado exitosamente para usuario 5
-2025-04-17 10:56:24,157 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:56:24,175 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-10] Rol cambiado exitosamente para el usuario 5
-2025-04-17 10:56:24,178 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
-    select
-        g1_0.id,
-        g1_0.nombre 
-    from
-        grupo_trabajo g1_0 
-    where
-        g1_0.id=?
-2025-04-17 10:57:01,733 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-1] Cambiando estado del usuario 5 a ACTIVO
-2025-04-17 10:57:01,738 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Cambiando estado a ACTIVO para usuario 5
-2025-04-17 10:57:01,741 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:57:01,752 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Estado cambiado exitosamente para usuario 5
-2025-04-17 10:57:01,758 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:57:01,770 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-1] Estado cambiado exitosamente para el usuario 5
-2025-04-17 10:57:01,776 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
-    select
-        g1_0.id,
-        g1_0.nombre 
-    from
-        grupo_trabajo g1_0 
-    where
-        g1_0.id=?
-2025-04-17 10:57:19,512 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Cambiando estado del usuario 5 a SUSPENDIDO
-2025-04-17 10:57:19,517 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Cambiando estado a SUSPENDIDO para usuario 5
-2025-04-17 10:57:19,522 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:57:19,528 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Estado cambiado exitosamente para usuario 5
-2025-04-17 10:57:19,533 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:57:19,570 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Estado cambiado exitosamente para el usuario 5
-2025-04-17 10:57:19,580 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
-    select
-        g1_0.id,
-        g1_0.nombre 
-    from
-        grupo_trabajo g1_0 
-    where
-        g1_0.id=?
-2025-04-17 10:58:01,120 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-2] Editando datos del usuario 5
-2025-04-17 10:58:01,213 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Editando datos del usuario 5
-2025-04-17 10:58:01,215 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 10:58:01,555 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.correo=?
-2025-04-17 10:58:01,567 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Datos actualizados exitosamente para usuario 5
-2025-04-17 10:58:01,576 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 10:58:01,598 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-2] Datos actualizados exitosamente para el usuario 5
-2025-04-17 10:58:01,604 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        g1_0.id,
-        g1_0.nombre 
-    from
-        grupo_trabajo g1_0 
-    where
-        g1_0.id=?
-2025-04-17 11:57:42,958 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2025-04-17 11:57:43,039 INFO o.s.b.StartupInfoLogger [main] Starting UsuariosSpaApplication using Java 17.0.13 with PID 2748 (C:\Users\carls\user.spa.api\target\classes started by Familia Hernando in C:\Users\carls\user.spa.api)
-2025-04-17 11:57:43,041 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.5, Spring v6.0.13
-2025-04-17 11:57:43,042 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-04-17 11:57:44,397 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17 11:57:44,510 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
-2025-04-17 11:57:45,679 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2025-04-17 11:57:45,699 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2025-04-17 11:57:45,705 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2025-04-17 11:57:45,709 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
-2025-04-17 11:57:45,958 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2025-04-17 11:57:45,964 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2794 ms
-2025-04-17 11:57:46,263 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17 11:57:46,466 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
-2025-04-17 11:57:46,473 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2025-04-17 11:57:47,175 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17 11:57:47,229 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2025-04-17 11:57:47,589 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c11332b
-2025-04-17 11:57:47,593 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-04-17 11:57:49,498 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17 11:57:49,907 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17 11:57:50,987 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page template: index
-2025-04-17 11:57:51,414 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2025-04-17 11:57:51,463 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2025-04-17 11:57:51,475 INFO o.s.b.StartupInfoLogger [main] Started UsuariosSpaApplication in 9.535 seconds (process running for 10.339)
-2025-04-17 11:58:08,854 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17 11:58:08,854 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2025-04-17 11:58:08,863 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 9 ms
-2025-04-17 11:58:09,004 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 11:58:09,304 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
+2025-04-22 15:58:44,249 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 16:01:27,897 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-04-22 16:01:28,094 INFO o.s.b.StartupInfoLogger [main] Starting UsuariosSpaApplication using Java 17.0.13 with PID 17044 (C:\Users\carls\user.spa.api\target\classes started by Familia Hernando in C:\Users\carls\user.spa.api)
+2025-04-22 16:01:28,096 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-04-22 16:01:28,104 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-22 16:01:29,569 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-22 16:01:29,696 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 109 ms. Found 2 JPA repository interfaces.
+2025-04-22 16:01:30,864 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2025-04-22 16:01:30,887 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-22 16:01:30,901 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-04-22 16:01:30,906 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-04-22 16:01:31,240 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-04-22 16:01:31,244 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2958 ms
+2025-04-22 16:01:31,566 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-22 16:01:31,704 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-04-22 16:01:31,709 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2025-04-22 16:01:32,233 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-22 16:01:32,299 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-22 16:01:32,638 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f849027
+2025-04-22 16:01:32,643 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-22 16:01:32,748 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-22 16:01:32,808 DEBUG o.h.t.d.s.s.DdlTypeRegistry [main] addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2bfa17b0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@625264ed)
+2025-04-22 16:01:34,641 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-22 16:01:34,837 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-22 16:01:35,749 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-22 16:01:36,032 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2025-04-22 16:01:37,122 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-22 16:01:37,206 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2025-04-22 16:01:37,338 INFO o.s.b.StartupInfoLogger [main] Started UsuariosSpaApplication in 10.636 seconds (process running for 12.852)
+2025-04-22 16:01:37,485 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-22 16:01:37,486 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-22 16:01:37,493 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 5 ms
+2025-04-22 16:01:37,598 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 16:01:37,817 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -702,62 +172,9 @@
         u1_0.version 
     from
         usuarios u1_0
-2025-04-17 11:58:09,396 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Se encontraron 1 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 11:58:15,329 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-6] Buscando usuario con ID: 5
-2025-04-17 11:58:15,401 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-6] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 11:58:25,603 ERROR c.e.u.e.GlobalExceptionHandler [http-nio-8080-exec-9] Unexpected error: Request method 'GET' is not supported
-2025-04-17 11:59:00,111 ERROR c.e.u.e.GlobalExceptionHandler [http-nio-8080-exec-3] Unexpected error: Request method 'GET' is not supported
-2025-04-17 12:12:55,355 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2025-04-17 12:12:55,455 INFO o.s.b.StartupInfoLogger [main] Starting UsuariosSpaApplication using Java 17.0.13 with PID 10732 (C:\Users\carls\user.spa.api\target\classes started by Familia Hernando in C:\Users\carls\user.spa.api)
-2025-04-17 12:12:55,456 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.5, Spring v6.0.13
-2025-04-17 12:12:55,456 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-04-17 12:12:56,760 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17 12:12:56,853 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
-2025-04-17 12:12:57,861 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2025-04-17 12:12:57,886 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2025-04-17 12:12:57,892 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2025-04-17 12:12:57,893 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
-2025-04-17 12:12:58,094 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2025-04-17 12:12:58,099 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2486 ms
-2025-04-17 12:12:58,374 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17 12:12:58,525 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
-2025-04-17 12:12:58,532 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2025-04-17 12:12:59,099 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17 12:12:59,151 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2025-04-17 12:12:59,409 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@714f1a44
-2025-04-17 12:12:59,413 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-04-17 12:13:01,106 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17 12:13:01,249 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17 12:13:02,144 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page template: index
-2025-04-17 12:13:02,448 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2025-04-17 12:13:02,496 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2025-04-17 12:13:02,517 INFO o.s.b.StartupInfoLogger [main] Started UsuariosSpaApplication in 8.048 seconds (process running for 8.727)
-2025-04-17 12:13:48,607 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17 12:13:48,699 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2025-04-17 12:13:48,710 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 6 ms
-2025-04-17 12:13:48,962 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 12:13:49,865 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
+2025-04-22 16:01:37,865 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 16:01:40,533 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 16:01:40,541 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -777,9 +194,9 @@
         u1_0.version 
     from
         usuarios u1_0
-2025-04-17 12:13:50,037 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Se encontraron 1 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 12:13:56,013 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Buscando usuario con ID: 5
-2025-04-17 12:13:56,037 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
+2025-04-22 16:01:40,552 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 16:02:25,877 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Buscando usuario con ID: 1
+2025-04-22 16:02:25,904 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -801,105 +218,8 @@
         usuarios u1_0 
     where
         u1_0.id=?
-2025-04-17 12:14:28,587 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-8] Editando datos del usuario 5
-2025-04-17 12:14:28,700 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-8] Editando datos del usuario 5
-2025-04-17 12:14:28,701 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-8] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 12:14:28,783 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-8] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.correo=?
-2025-04-17 12:14:28,817 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-8] Datos actualizados exitosamente para usuario 5
-2025-04-17 12:14:28,871 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-8] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 12:14:28,972 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-8] Datos actualizados exitosamente para el usuario 5
-2025-04-17 12:14:29,053 ERROR c.e.u.e.GlobalExceptionHandler [http-nio-8080-exec-8] Unexpected error: Could not write JSON: could not initialize proxy [com.example.usuariospa.model.entity.GrupoTrabajo#3] - no Session
-2025-04-17 12:14:44,206 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-9] Editando datos del usuario 5
-2025-04-17 12:14:44,213 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-9] Editando datos del usuario 5
-2025-04-17 12:14:44,223 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-9] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 12:14:44,243 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-9] Datos actualizados exitosamente para usuario 5
-2025-04-17 12:14:44,256 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-9] Datos actualizados exitosamente para el usuario 5
-2025-04-17 12:14:44,259 ERROR c.e.u.e.GlobalExceptionHandler [http-nio-8080-exec-9] Unexpected error: Could not write JSON: could not initialize proxy [com.example.usuariospa.model.entity.GrupoTrabajo#3] - no Session
-2025-04-17 12:14:45,662 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 12:14:45,674 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
+2025-04-22 16:02:27,885 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-8] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 16:02:27,890 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-8] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -919,42 +239,9 @@
         u1_0.version 
     from
         usuarios u1_0
-2025-04-17 12:14:45,690 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Se encontraron 1 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 12:15:25,864 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-5] Creando nuevo usuario: CARLOS@GMAIL.COM
-2025-04-17 12:15:25,876 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Iniciando creación de usuario con correo: CARLOS@GMAIL.COM
-2025-04-17 12:15:25,885 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.correo=?
-2025-04-17 12:15:25,951 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
-    insert 
-    into
-        usuarios
-        (apellido,ciudad,correo,edad,estado,fecha_actualizacion,fecha_creacion,fecha_nacimiento,grupo_trabajo_id,nombre,profesion,provincia,rol,sexo,version) 
-    values
-        (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2025-04-17 12:15:26,002 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Usuario creado exitosamente con ID: 7
-2025-04-17 12:15:26,009 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-5] Usuario creado exitosamente con ID: 7
-2025-04-17 12:15:26,046 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-6] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 12:15:26,060 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-6] 
+2025-04-22 16:02:27,901 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-8] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 16:02:31,389 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-9] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 16:02:31,395 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-9] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -974,56 +261,10 @@
         u1_0.version 
     from
         usuarios u1_0
-2025-04-17 12:15:26,082 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-6] Se encontraron 2 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 12:15:33,466 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-10] Cambiando estado del usuario 7 a SUSPENDIDO
-2025-04-17 12:15:33,475 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Cambiando estado a SUSPENDIDO para usuario 7
-2025-04-17 12:15:33,485 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 12:15:33,533 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Estado cambiado exitosamente para usuario 7
-2025-04-17 12:15:33,544 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 12:15:33,561 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-10] Estado cambiado exitosamente para el usuario 7
-2025-04-17 12:15:33,584 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 12:15:33,594 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] 
+2025-04-22 16:02:31,408 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-9] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 16:02:40,280 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 16:02:40,282 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
+2025-04-22 16:02:40,286 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
     select
         u1_0.id,
         u1_0.apellido,
@@ -1043,328 +284,5 @@
         u1_0.version 
     from
         usuarios u1_0
-2025-04-17 12:15:33,601 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-1] Se encontraron 2 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 12:15:37,216 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-2] Cambiando estado del usuario 7 a BLOQUEADO
-2025-04-17 12:15:37,221 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Cambiando estado a BLOQUEADO para usuario 7
-2025-04-17 12:15:37,225 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 12:15:37,232 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Estado cambiado exitosamente para usuario 7
-2025-04-17 12:15:37,232 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 12:15:37,260 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-2] Estado cambiado exitosamente para el usuario 7
-2025-04-17 12:15:37,288 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-4] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 12:15:37,295 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-4] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0
-2025-04-17 12:15:37,304 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-4] Se encontraron 2 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 12:15:38,901 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Cambiando estado del usuario 7 a ACTIVO
-2025-04-17 12:15:38,914 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Cambiando estado a ACTIVO para usuario 7
-2025-04-17 12:15:38,930 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 12:15:38,965 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Estado cambiado exitosamente para usuario 7
-2025-04-17 12:15:38,977 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
-    update
-        usuarios 
-    set
-        apellido=?,
-        ciudad=?,
-        correo=?,
-        edad=?,
-        estado=?,
-        fecha_actualizacion=?,
-        fecha_nacimiento=?,
-        grupo_trabajo_id=?,
-        nombre=?,
-        profesion=?,
-        provincia=?,
-        rol=?,
-        sexo=?,
-        version=? 
-    where
-        id=? 
-        and version=?
-2025-04-17 12:15:39,009 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Estado cambiado exitosamente para el usuario 7
-2025-04-17 12:15:39,037 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 12:15:39,047 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-5] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0
-2025-04-17 12:15:39,056 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-5] Se encontraron 2 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 12:26:09,801 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-9] Buscando usuario con ID: 5
-2025-04-17 12:26:09,814 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-9] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 12:26:15,905 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 12:26:15,925 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0
-2025-04-17 12:26:15,950 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Se encontraron 2 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 12:26:19,391 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-4] Buscando usuario con ID: 5
-2025-04-17 12:26:19,400 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-4] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 13:01:55,900 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2025-04-17 13:01:55,981 INFO o.s.b.StartupInfoLogger [main] Starting UsuariosSpaApplication using Java 17.0.13 with PID 19420 (C:\Users\carls\user.spa.api\target\classes started by Familia Hernando in C:\Users\carls\user.spa.api)
-2025-04-17 13:01:55,983 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.5, Spring v6.0.13
-2025-04-17 13:01:55,985 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-04-17 13:01:57,471 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17 13:01:57,620 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 117 ms. Found 2 JPA repository interfaces.
-2025-04-17 13:01:58,610 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2025-04-17 13:01:58,629 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2025-04-17 13:01:58,638 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2025-04-17 13:01:58,638 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
-2025-04-17 13:01:58,871 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2025-04-17 13:01:58,874 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2788 ms
-2025-04-17 13:01:59,117 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17 13:01:59,270 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
-2025-04-17 13:01:59,278 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
-2025-04-17 13:01:59,828 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17 13:01:59,881 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2025-04-17 13:02:00,217 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@156cfa20
-2025-04-17 13:02:00,220 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-04-17 13:02:01,958 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17 13:02:02,227 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17 13:02:03,339 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page template: index
-2025-04-17 13:02:03,727 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2025-04-17 13:02:03,772 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2025-04-17 13:02:03,790 INFO o.s.b.StartupInfoLogger [main] Started UsuariosSpaApplication in 8.832 seconds (process running for 9.671)
-2025-04-17 13:03:15,508 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17 13:03:15,522 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2025-04-17 13:03:15,528 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 5 ms
-2025-04-17 13:03:15,735 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-2] Buscando usuario con ID: 5
-2025-04-17 13:03:15,981 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-2] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 13:03:21,190 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 13:03:21,359 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-3] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0
-2025-04-17 13:03:21,366 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Se encontraron 2 usuarios que coinciden con los criterios de búsqueda
-2025-04-17 13:11:49,806 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-6] Buscando usuario con ID: 7
-2025-04-17 13:11:49,808 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-6] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0 
-    where
-        u1_0.id=?
-2025-04-17 13:19:16,627 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Filtrando usuarios por nombre: null, apellido: null, correo: null, edad: null
-2025-04-17 13:19:16,637 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] 
-    select
-        u1_0.id,
-        u1_0.apellido,
-        u1_0.ciudad,
-        u1_0.correo,
-        u1_0.edad,
-        u1_0.estado,
-        u1_0.fecha_actualizacion,
-        u1_0.fecha_creacion,
-        u1_0.fecha_nacimiento,
-        u1_0.grupo_trabajo_id,
-        u1_0.nombre,
-        u1_0.profesion,
-        u1_0.provincia,
-        u1_0.rol,
-        u1_0.sexo,
-        u1_0.version 
-    from
-        usuarios u1_0
-2025-04-17 13:19:16,652 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-10] Se encontraron 2 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 16:02:40,294 DEBUG c.e.u.s.UsuarioServiceImpl [http-nio-8080-exec-3] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda
+2025-04-22 16:02:40,304 INFO c.e.u.c.UsuarioController [http-nio-8080-exec-3] Se encontraron 4 usuarios que coinciden con los criterios de búsqueda

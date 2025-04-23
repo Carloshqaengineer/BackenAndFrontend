@@ -1,15 +1,21 @@
-# Usa la imagen oficial de Java 17
-FROM eclipse-temurin:17-jdk-jammy
-
-# Copia el código fuente
-COPY . /app
+# Etapa 1: Build con Maven
+FROM maven:3.9.4-eclipse-temurin-17 AS build
 WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package -DskipTests
 
-# Build con Maven (o Gradle)
-RUN ./mvnw clean package
+# Etapa 2: Imagen final
+FROM eclipse-temurin:17-jdk-jammy
+WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
 
-# Puerto expuesto (el mismo que usa Spring Boot, usualmente 8080)
-EXPOSE 8080
+# Variables de entorno para producción
+ENV DB_HOST=${DB_HOST}
+ENV DB_PORT=${DB_PORT}
+ENV DB_NAME=${DB_NAME}
+ENV DB_USER=${DB_USER}
+ENV DB_PASSWORD=${DB_PASSWORD}
 
-# Comando para iniciar la aplicación
-CMD ["java", "-jar", "target/backandfront-0.0.1-SNAPSHOT.jar"]
+EXPOSE ${PORT:-8080}
+ENTRYPOINT ["java", "-jar", "app.jar"]
