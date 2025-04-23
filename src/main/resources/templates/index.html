@@ -7,50 +7,156 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="container mt-4">
-    <h1 class="mb-4">Gestión de Usuarios</h1>
+<h1 class="mb-4">Gestión de Usuarios</h1>
 
-    <div class="mb-4">
+<div class="mb-4">
+    <div class="d-flex justify-content-between mb-3">
         <a href="/nuevo-usuario" class="btn btn-primary">Crear Nuevo Usuario</a>
+        <div class="search-container">
+            <input type="search" id="searchInput" class="form-control" placeholder="Buscar usuarios...">
+        </div>
     </div>
-    <table class="table table-striped">
-        <thead class="table-dark">
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Estado</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="usuario : ${usuarios}">
-                <td th:text="${usuario.id}"></td>
-                <td th:text="${usuario.nombre + ' ' + usuario.apellido}"></td>
-                <td th:text="${usuario.correo}"></td>
-                <td th:text="${usuario.estado}"></td>
-                <td>
-                    <div class="btn-group" role="group">
-                        <a th:href="@{/editar/{id}(id=${usuario.id})}" class="btn btn-warning btn-sm">Editar</a>
-                        <button th:if="${usuario.estado.name() != 'ACTIVO'}"
-                                th:onclick="'cambiarEstado(' + ${usuario.id} + ', \'ACTIVO\')'"
-                                class="btn btn-success btn-sm">Activar</button>
-                        <button th:if="${usuario.estado.name() != 'BLOQUEADO'}"
-                                th:onclick="'cambiarEstado(' + ${usuario.id} + ', \'BLOQUEADO\')'"
-                                class="btn btn-secondary btn-sm">Bloquear</button>
-                        <button th:if="${usuario.estado.name() != 'SUSPENDIDO'}"
-                                th:onclick="'cambiarEstado(' + ${usuario.id} + ', \'SUSPENDIDO\')'"
-                                class="btn btn-danger btn-sm">Suspender</button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row g-3 mb-3 filter-section">
+        <div class="col-md-3">
+            <select id="filterEstado" class="form-select">
+                <option value="">Todos los estados</option>
+                <option value="ACTIVO">Activo</option>
+                <option value="BLOQUEADO">Bloqueado</option>
+                <option value="SUSPENDIDO">Suspendido</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input type="text" id="filterNombre" class="form-control" placeholder="Filtrar por nombre">
+        </div>
+        <div class="col-md-3">
+            <input type="text" id="filterCorreo" class="form-control" placeholder="Filtrar por correo">
+        </div>
+        <div class="col-md-2">
+            <input type="text" id="filterId" class="form-control" placeholder="Filtrar por ID">
+        </div>
+        <div class="col-md-1">
+            <button id="clearFilters" class="btn btn-secondary w-100">Limpiar</button>
+        </div>
+    </div>
+</div>
+<table class="table table-striped">
+    <thead class="table-dark">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="usuario : ${usuarios}">
+        <td th:text="${usuario.id}"></td>
+        <td th:text="${usuario.nombre + ' ' + usuario.apellido}"></td>
+        <td th:text="${usuario.correo}"></td>
+        <td th:text="${usuario.estado}"></td>
+        <td>
+            <div class="btn-group" role="group">
+                <a th:href="@{/editar/{id}(id=${usuario.id})}" class="btn btn-warning btn-sm">Editar</a>
+                <button th:if="${usuario.estado.name() != 'ACTIVO'}"
+                        th:onclick="'cambiarEstado(' + ${usuario.id} + ', \'ACTIVO\')'"
+                        class="btn btn-success btn-sm">Activar
+                </button>
+                <button th:if="${usuario.estado.name() != 'BLOQUEADO'}"
+                        th:onclick="'cambiarEstado(' + ${usuario.id} + ', \'BLOQUEADO\')'"
+                        class="btn btn-secondary btn-sm">Bloquear
+                </button>
+                <button th:if="${usuario.estado.name() != 'SUSPENDIDO'}"
+                        th:onclick="'cambiarEstado(' + ${usuario.id} + ', \'SUSPENDIDO\')'"
+                        class="btn btn-danger btn-sm">Suspender
+                </button>
+                <button th:onclick="'eliminarUsuario(' + ${usuario.id} + ')'"
+                        class="btn btn-outline-danger btn-sm">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function cambiarEstado(id, estado) {
-            fetch(`/api/usuarios/${id}/estado?estado=${estado}`, {
-                method: 'PATCH',
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Filtro de usuarios
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const filterEstado = document.getElementById('filterEstado');
+        const filterNombre = document.getElementById('filterNombre');
+        const filterCorreo = document.getElementById('filterCorreo');
+        const filterId = document.getElementById('filterId');
+        const tbody = document.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+
+        function applyFilters() {
+            const searchText = searchInput.value.toLowerCase();
+            const estadoValue = filterEstado.value;
+            const nombreValue = filterNombre.value.toLowerCase();
+            const correoValue = filterCorreo.value.toLowerCase();
+            const idValue = filterId.value.toLowerCase();
+
+            rows.forEach(row => {
+                const id = row.cells[0].textContent.toLowerCase();
+                const nombre = row.cells[1].textContent.toLowerCase();
+                const correo = row.cells[2].textContent.toLowerCase();
+                const estado = row.cells[3].textContent;
+
+                const matchesSearch = nombre.includes(searchText) || correo.includes(searchText) || id.includes(searchText);
+                const matchesEstado = estadoValue === '' || estado === estadoValue;
+                const matchesNombre = nombreValue === '' || nombre.includes(nombreValue);
+                const matchesCorreo = correoValue === '' || correo.includes(correoValue);
+                const matchesId = idValue === '' || id.includes(idValue);
+
+                row.style.display = (matchesSearch && matchesEstado && matchesNombre && matchesCorreo && matchesId) ? '' : 'none';
+            });
+        }
+
+// Agregar event listeners para todos los filtros
+searchInput.addEventListener('input', applyFilters);
+filterEstado.addEventListener('change', applyFilters);
+filterNombre.addEventListener('input', applyFilters);
+filterCorreo.addEventListener('input', applyFilters);
+filterId.addEventListener('input', applyFilters);
+
+// Agregar funcionalidad al botón de limpiar filtros
+document.getElementById('clearFilters').addEventListener('click', function() {
+    searchInput.value = '';
+    filterEstado.value = '';
+    filterNombre.value = '';
+    filterCorreo.value = '';
+    filterId.value = '';
+    applyFilters();
+});
+    });
+
+    function cambiarEstado(id, estado) {
+        fetch(`/api/usuarios/${id}/estado?estado=${estado}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                location.reload();
+            } else {
+                alert('Error al cambiar el estado del usuario');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error al cambiar el estado del usuario');
+        });
+    }
+
+    function eliminarUsuario(id) {
+        if (confirm('¿Está seguro que desea eliminar este usuario?')) {
+            fetch(`/api/usuarios/${id}`, {
+                method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -59,14 +165,15 @@
                 if (response.ok) {
                     location.reload();
                 } else {
-                    alert('Error al cambiar el estado del usuario');
+                    alert('Error al eliminar el usuario');
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Error al cambiar el estado del usuario');
+                alert('Error al eliminar el usuario');
             });
         }
-    </script>
+    }
+</script>
 </body>
 </html>
